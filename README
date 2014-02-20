@@ -38,7 +38,5 @@ Options:
 -p <int>   Calculate:
            1 = PDF (default)
            2 = CDF
--o <file>  Output file
-
 
 timnugent@gmail.com

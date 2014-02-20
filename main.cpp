@@ -26,7 +26,6 @@ void usage(const char* prog){
    cout << "-p <int>   Calculate:" << endl;
    cout << "           1 = PDF (default)" << endl; 
    cout << "           2 = CDF" << endl;    
-   cout << "-o <file>  Output file" << endl;   
    cout << endl; 
  
 }
