@@ -10,7 +10,7 @@ http://sfb649.wiwi.hu-berlin.de/fedc_homepage/xplore/ebooks/html/spm/spmhtmlnode
 
 Compile by running 'make'. Uses -std=c++11 - on older compilers you may need to change this to -std=c++0x in the Makefile.
 
-Run all tests with 'make test'. This calls an R script which generates plots from various .csv file. The univariate data in the data/ directory is the Old Faithful geyser eruption/waiting data.
+Run all tests with 'make test'. This calls an R script which generates plots from various .csv file. The multivariate data in the data/ directory is the Old Faithful geyser eruption/waiting data.
 
 Example usage:
 
