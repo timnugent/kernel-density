@@ -19,7 +19,7 @@ void usage(const char* prog){
    cout << "           1 = Gaussian (default)" << endl;   
    cout << "           2 = Box" << endl;  
    cout << "           3 = Epanechnikov" << endl;     
-   cout << "-b <int>   Bandwidth optimsiation (Gaussian only):" << endl;   
+   cout << "-b <int>   Bandwidth optimisation (Gaussian only):" << endl;   
    cout << "           1 = Default" << endl; 
    cout << "           2 = AMISE optimal, secant method" << endl;    
    cout << "           3 = AMISE optimal, bisection method" << endl; 

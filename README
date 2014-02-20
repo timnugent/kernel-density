@@ -31,7 +31,7 @@ Options:
            1 = Gaussian (default)
            2 = Box
            3 = Epanechnikov
--b <int>   Bandwidth optimsiation (Gaussian only):
+-b <int>   Bandwidth optimisation (Gaussian only):
            1 = Default
            2 = AMISE optimal, secant method
            3 = AMISE optimal, bisection method
