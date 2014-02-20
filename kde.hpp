@@ -30,6 +30,7 @@ public:
     double cdf(double x);
     double cdf(double x, double y);
     double cdf(vector<double>& data);
+    double get_bandwidth(int x){return(bandwidth_map[x]);};
     int get_vars_count(){return(data_matrix.size());};
 private:
 	void calc_bandwidth();

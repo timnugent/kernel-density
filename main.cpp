@@ -87,6 +87,7 @@ int main(int argc, const char* argv[]){
 		double min_x = kde->get_min(0);
 		double max_x = kde->get_max(0);
 		double x_increment = (max_x-min_x)/1000.0;
+		cout << "# bandwidth var 1: " << kde->get_bandwidth(0) << endl;
 		for(double x = min_x; x <= max_x; x += x_increment){
 			if(pdf == 1){
 				printf("%2.6F,%2.6F\n",x,kde->pdf(x));
@@ -106,6 +107,8 @@ int main(int argc, const char* argv[]){
 		double y_increment = (max_y-min_y)/nd;
 		double y = min_y;
 		double x = min_x;
+		cout << "# bandwidth var 1: " << kde->get_bandwidth(0) << endl;
+		cout << "# bandwidth var 2: " << kde->get_bandwidth(1) << endl;
 		cout << ",";
 		for(int i = 0; i < nd; i++, y += y_increment){
 			cout << y;
