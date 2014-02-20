@@ -1,0 +1,44 @@
+Kernel Density Estimation
+-------------------------
+(c) Tim Nugent 2014
+
+Based on Philipp K. Janert's Perl module:
+http://search.cpan.org/~janert/Statistics-KernelEstimation-0.05 
+
+Multivariate stuff from here:
+http://sfb649.wiwi.hu-berlin.de/fedc_homepage/xplore/ebooks/html/spm/spmhtmlnode18.html
+
+Compile by running 'make'. Uses -std=c++11 - on older compilers you may need to change this to -std=c++0x in the Makefile.
+
+Run all tests with 'make test'. This calls an R script which generates plots from various .csv file. The univariate data in the data/ directory is the Old Faithful geyser eruption/waiting data.
+
+Example usage:
+
+	./kerndens data/univariate.csv > uni_pdf.csv
+
+To plot this in R:
+
+data <- read.table("uni_pdf.csv", header=FALSE, sep="," ,comment.char="#")
+plot(data$V1,data$V2,xlab="x",ylab="density",main="Univariate PDF")
+
+Full options:
+
+Usage:
+./kerndens [options] [csv_file]
+
+Options:
+-k <int>   Kernel type:
+           1 = Gaussian (default)
+           2 = Box
+           3 = Epanechnikov
+-b <int>   Bandwidth optimsiation (Gaussian only):
+           1 = Default
+           2 = AMISE optimal, secant method
+           3 = AMISE optimal, bisection method
+-p <int>   Calculate:
+           1 = PDF (default)
+           2 = CDF
+-o <file>  Output file
+
+
+timnugent@gmail.com
